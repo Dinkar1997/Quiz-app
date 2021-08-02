@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz App </title>
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div class="start-main">
+            <h2 class="start">Start</h2>
+        </div>
+        <div class="rules">
+            <h2>Some Rules of this Quiz</h2>
+            <hr />
+            <h3>1. You will have only 25 seconds for all questions.</h3>
+            <h3>2. One marks for each Question</h3>
+            <h3>3. Their is no negative marking.</h3>
+            <h3>4.You'll get points on the basis of your correct answers</h3>
+            <h3>5.You can't exit from the quiz while you're playing.</h3>
+            <hr />
+            <div class="button">
+                <button id="exit" class="exit">Exit Quiz</button>
+                <button id="continue" class="continue">Continue</button>
+            </div>
+        </div>
+        <div class="inner-div">
+            <div class="timer">
+                <div class="time-text">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="question-section">
+                <h2 class="question">Question comes here</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="ans1" class="answer">
+                        <label for="ans1" id="option1">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans2" class="answer">
+                        <label for="ans2" id="option2">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans3" class="answer">
+                        <label for="ans3" id="option3">Answer Option</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans4" class="answer">
+                        <label for="ans4" id="option4">Answer Option</label>
+                    </li>
+                </ul>
+                <button id="submit">Submit</button>
+            </div>
+            <div id="showScore" class="scoreArea"></div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
